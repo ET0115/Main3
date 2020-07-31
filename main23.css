@@ -360,9 +360,7 @@ body{
 }
 
 @media (max-width: 1014px){
-  .container{
-    width: 90%;
-  }
+
   .banner{
     width: 100%;
   }
@@ -466,6 +464,7 @@ body{
     align-items: start;
     padding-left: 30px;
     margin-left: 0 auto;
+    margin-top: 37px;
   }
   .footerbottom span{
     margin-top: 23px;
