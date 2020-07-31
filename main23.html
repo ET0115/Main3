@@ -7,14 +7,41 @@
   <title>main3</title>
 </head>
 <body>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 10, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+  </script>
+
   <div class="container">
-    <div class="header">
+    <div class="header" data-aos="fade-right">
       <img class="logo" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg" alt="">
       <ul>
         <li> <a href="">首頁</a> </li>
         <li> <a href="">甜點</a> </li>
         <li> <a href="">登入</a> </li>
-        <li><a class="cart" href=""><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/shopping_cart.png" alt=""></a></li>
+        <li><a class="cart" href=""><img data-aos="fade-right" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/shopping_cart.png" alt=""></a></li>
         </ul>
     </div>
     
@@ -24,21 +51,21 @@
       <a class="cart" href=""><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/shopping_cart.png" alt=""></a>
     </div>
 
-    <img class="banner" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png" alt="">
+    <img class="banner" data-aos="fade-left" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/banner.png" alt="">
 
     <div class="content">
       <div class="sidebar">
         <h3>甜點類別</h3>
         <ul>
-          <li> <a href="">所有甜點（48）</a> </li>
-          <li> <a href="">本日精選（10）</a> </li>
-          <li> <a href="">人氣推薦（26）</a> </li>
-         <li> <a href="">新品上市（12）</a> </li>
+          <li data-aos="flip-down"> <a href="">所有甜點（48）</a> </li>
+          <li data-aos="flip-down"> <a href="">本日精選（10）</a> </li>
+          <li data-aos="flip-down"> <a href="">人氣推薦（26）</a> </li>
+         <li data-aos="flip-down"> <a href="">新品上市（12）</a> </li>
         </ul>
       </div>
   
       <div class="desert">
-        <div class="detail">
+        <div class="detail" data-aos="zoom-in">
           <div class="label"> <span>本日精選</span> </div>
           <a href="" class="heart">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="">
@@ -50,7 +77,7 @@
           </div>
           <a class="addcart" href="">加入購物車</a>
         </div>
-        <div class="detail">
+        <div class="detail" data-aos="zoom-in">
           <div class="label"> <span>本日精選</span> </div>
           <a href="" class="heart">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="">
@@ -62,7 +89,7 @@
           </div>
           <a class="addcart" href="">加入購物車</a>
         </div>
-        <div class="detail">
+        <div class="detail" data-aos="zoom-in">
           <div class="label"> <span>本日精選</span> </div>
           <a href="" class="heart">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="">
@@ -74,7 +101,7 @@
           </div>
           <a class="addcart" href="">加入購物車</a>
         </div>
-        <div class="detail">
+        <div class="detail" data-aos="zoom-in">
           <div class="label"> <span>本日精選</span> </div>
           <a href="" class="heart">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="">
@@ -86,7 +113,7 @@
           </div>
           <a class="addcart" href="">加入購物車</a>
         </div>
-        <div class="detail">
+        <div class="detail" data-aos="zoom-in">
           <div class="label"> <span>本日精選</span> </div>
           <a href="" class="heart">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="">
@@ -98,7 +125,7 @@
           </div>
           <a class="addcart" href="">加入購物車</a>
         </div>
-        <div class="detail">
+        <div class="detail" data-aos="zoom-in">
           <div class="label"> <span>本日精選</span> </div>
           <a href="" class="heart">
             <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/favorite_border.png" alt="">
@@ -148,7 +175,7 @@
   <div class="footer">
     <div class="footercontainer">
 
-      <div class="footerleft">
+      <div class="footerleft" data-aos="zoom-in">
         <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-lg-dark.svg" alt="">
         <ul class="info">
           <li>07-1234-5678</li>
@@ -156,7 +183,7 @@
           <li>800 高雄市新興區幸福路 520 號</li>
         </ul>
       </div>
-        <ul class="footerright">
+        <ul class="footerright" data-aos="zoom-out">
           <li>今天是個<span>——</span></li>
           <li>&nbsp吃甜點的好日子。</li>
         </ul>

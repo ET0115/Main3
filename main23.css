@@ -48,6 +48,10 @@ table {
 	border-spacing: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 body{
   font-family: Microsoft JhengHei;
 }
@@ -56,7 +60,6 @@ body{
   margin: 0 auto;
 }
 .header {
-  height: 40px;
   margin: 30px 0;
   display: flex;
   align-items: center;
@@ -121,7 +124,6 @@ body{
 }
 .sidebar li{
   border: 1px solid #EAF0ED;
-  padding: 16px 0;
 }
 .sidebar h3 {
   color: #fff;
@@ -129,10 +131,12 @@ body{
   padding: 16px 0;
 }
 .sidebar a {
+  display: block;
   text-decoration: none;
+  padding: 16px 0;
   color: #3F5D45;
 }
-.sidebar li:hover {
+.sidebar a:hover {
   text-decoration: none;
   color: #3F5D45;
   background: #EAF0ED;
@@ -145,8 +149,6 @@ body{
 }
 .detail{
   position: relative;
-  display: flex;
-  flex-direction: column;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -313,12 +315,12 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 240px;
+  padding-bottom: 9px;
 }
 .footerleft img{
   display: block;
   width: 171.22px;
-  padding-top: 9px;
+  padding-bottom: 80px;
 }
 .info{
   font-size: 16px;
@@ -409,7 +411,7 @@ body{
     margin: 0px;
   }
   .container{
-    width: 375px;
+    max-width: 375px;
   }
   .content{
     width: 100%;
@@ -436,7 +438,7 @@ body{
   .mailcontainer{
     align-items: center;
     flex-direction: column;
-    width: 375px;
+    max-width: 375px;
   }
   .mail{
     width: 251px;
